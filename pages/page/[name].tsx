@@ -7,7 +7,7 @@ const Page: NextPage = ({ mon }) => {
      <div>
       <h1 className="text-4xl text-center font-bold text-purple-400">{mon.name}</h1>
       <div>
-        <ACard name={mon.name} abilities={mon.abilities} />
+        <ACard name="Abilities" abilities={mon.abilities} />
       </div>
 
       {console.log(mon.name)}
