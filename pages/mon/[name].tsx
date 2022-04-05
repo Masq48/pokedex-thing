@@ -9,9 +9,6 @@ const Page: NextPage = ({ mon }) => {
       <div>
         <ACard name="Abilities" abilities={mon.abilities} />
       </div>
-
-      {console.log(mon.name)}
-      {console.log(mon.abilities)}
      </div>
    )
 }
