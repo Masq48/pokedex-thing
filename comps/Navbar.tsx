@@ -8,14 +8,13 @@ const Navbar: NextFunctionComponent = () => {
 
   return (
     <nav className="bg-gray-600 mb-10">
-      <div className="flex flex-row-reverse space-x-4 items-center">
-        <div className="flex-none float-right">
-          <Link href={`./mon/${val}`}>
+      <div className="flex space-x-4 justify-center">
+        <div className="">
+          <Link href="/mon">
             <a>
-              <input type="button" value="search" />
+              Mon
             </a>
           </Link>
-          <input type="search" onChange={(e) => setVal(e.target.value)}/>
         </div>
       </div>
     </nav>
