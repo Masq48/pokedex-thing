@@ -3,9 +3,14 @@ import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 import ACard from "../../comps/ACard"
 
 const Page: NextPage = ({ mon }) => {
+
+  const cap = (str: string) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
    return (
      <div>
-      <h1 className="text-4xl text-center font-bold text-purple-400">{mon.name}</h1>
+      <h1 className="text-4xl text-center font-bold text-purple-400">{cap(mon.name)}</h1>
       <div>
         <ACard name="Abilities" abilities={mon.abilities} />
       </div>
