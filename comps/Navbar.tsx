@@ -9,7 +9,7 @@ const Navbar: NextFunctionComponent = () => {
   return (
     <nav className="bg-gray-600 mb-10">
       <div className="flex space-x-4 justify-center">
-        <div className="">
+        <div className="py-3 text-2xl font-bold text-purple-400">
           <Link href="/mon">
             <a>
               Mon
