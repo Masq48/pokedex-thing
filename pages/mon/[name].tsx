@@ -1,18 +1,19 @@
 import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 
+import cap from "../../public/utils"
+
 import Abilitycard from "../../comps/Abilitycard"
+import Typecard from "../../comps/Typecard"
+
 
 const Page: NextPage = ({ mon }) => {
-
-  const cap = (str: string) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
 
    return (
      <div>
       <h1 className="text-4xl text-center font-bold text-purple-400">{cap(mon.name)}</h1>
-      <div>
+      <div className="flex flex-column">
         <Abilitycard name="Abilities" abilities={mon.abilities} />
+        <Typecard poketypes={mon.types} />
       </div>
      </div>
    )
