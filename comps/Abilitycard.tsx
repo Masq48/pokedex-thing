@@ -1,6 +1,6 @@
 import { NextFunctionComponent } from "next"
 
-const ACard: NextFunctionComponent = ({ abilities }) => {
+const Abilitycard: NextFunctionComponent = ({ abilities }) => {
 
   const cap = (str: string) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -18,4 +18,4 @@ const ACard: NextFunctionComponent = ({ abilities }) => {
   )
 }
 
-export default ACard
+export default Abilitycard

@@ -1,6 +1,6 @@
 import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 
-import ACard from "../../comps/ACard"
+import Abilitycard from "../../comps/Abilitycard"
 
 const Page: NextPage = ({ mon }) => {
 
@@ -12,7 +12,7 @@ const Page: NextPage = ({ mon }) => {
      <div>
       <h1 className="text-4xl text-center font-bold text-purple-400">{cap(mon.name)}</h1>
       <div>
-        <ACard name="Abilities" abilities={mon.abilities} />
+        <Abilitycard name="Abilities" abilities={mon.abilities} />
       </div>
      </div>
    )
