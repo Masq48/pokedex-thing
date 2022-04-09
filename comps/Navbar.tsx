@@ -15,6 +15,11 @@ const Navbar: NextFunctionComponent = () => {
               Mon
             </a>
           </Link>
+          <Link href="/">
+            <a>
+              Abilities
+            </a>
+          </Link>
         </div>
       </div>
     </nav>
