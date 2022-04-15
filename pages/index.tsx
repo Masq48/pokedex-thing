@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useState } from "react"
 import search from "../public/search.svg"
 
-const Home: NextPage = ({ data }) => {
+const Home: NextPage = () => {
 
   const [val, setVal] = useState("")
 

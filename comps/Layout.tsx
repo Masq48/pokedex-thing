@@ -1,7 +1,6 @@
-import { NextFunctionComponent } from "next"
 import Navbar from "./Navbar"
 
-const Layout: NextFunctionComponent = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Navbar/>

@@ -1,8 +1,7 @@
-import { NextFunctionComponent } from "next"
 import { useState } from "react"
 import Link from "next/link"
 
-const Navbar: NextFunctionComponent = () => {
+const Navbar = () => {
 
   const [val, setVal] = useState("")
 

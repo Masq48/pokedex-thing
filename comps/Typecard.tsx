@@ -12,8 +12,8 @@ const Typecard: NextFunctionComponent = ({ poketypes }) => {
       <h1 className="text-4xl text-center">Types</h1>
       <ul className="flex my-5">
 
-        {poketypes.map(poketype =>(
-            <li className="flex-1 text-center">{cap(poketype.type.name)}</li>
+        {poketypes.map((poketype, idx) =>(
+            <li className="flex-1 text-center" key={idx}>{cap(poketype.type.name)}</li>
         ))}
 
       </ul>
